@@ -130,7 +130,9 @@ body {
 
   gap: 4px;
 }
-
+.stats p:first-child {
+  letter-spacing: 1px;
+}
 .stats p:last-child {
   font-size: 10px;
   letter-spacing: 2px;
