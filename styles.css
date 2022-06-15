@@ -47,6 +47,19 @@ body {
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
+.text--bold {
+  font-weight: 700;
+}
+.text--darkcyan {
+  color: hsl(185, 75%, 39%);
+}
+.text--darkblue {
+  color: hsl(229, 23%, 23%);
+}
+.text--grayblue {
+  color: hsl(227, 10%, 46%);
+}
+
 .card__header {
   background: url("./images/bg-pattern-card.svg") left top / 100% no-repeat;
   border-radius: inherit;
@@ -96,16 +109,10 @@ body {
 
   margin: 10px 0 5px;
 }
-.userInfo div p:first-child {
-  font-weight: 700;
-}
-.userInfo div p:last-child {
-  color: hsl(227, 10%, 46%);
-}
+
 .userInfo-city {
   font-size: 15px;
   letter-spacing: 0;
-  color: hsl(0, 0%, 59%);
 }
 
 .card__footer {
@@ -129,12 +136,9 @@ body {
 
   gap: 4px;
 }
-.stats p:first-child {
-  font-weight: 700;
-}
+
 .stats p:last-child {
-  font-size: 12px;
-  color: hsl(229, 23%, 23%);
+  font-size: 10px;
 }
 
 @media only screen and (min-width: 768px) {
