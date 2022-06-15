@@ -1,0 +1,144 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%) */
+body {
+  display: flex;
+  align-items: center;
+
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+
+  background-repeat: no-repeat;
+  background-position: right 47vw bottom 43vh, left 30vw top 50vh;
+  min-height: 100vh;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.container {
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 375px;
+
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.card__header {
+  background: url("./images/bg-pattern-card.svg") left top / 100% no-repeat;
+  border-radius: inherit;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.514);
+
+  padding: 65px 0;
+}
+
+.card__main img {
+  margin-top: 20%;
+  border: 5px white solid;
+  border-radius: 50%;
+  width: 30%;
+
+  position: relative;
+  z-index: 1;
+
+  top: -130px;
+}
+
+.card__main {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: center;
+
+  height: 150px;
+}
+.userInfo__container {
+  display: inherit;
+  flex-direction: inherit;
+
+  position: relative;
+  top: -120px;
+}
+
+.userInfo {
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: center;
+}
+.userInfo div {
+  display: inherit;
+  gap: 10px;
+
+  margin: 10px 0 5px;
+}
+.userInfo div p:first-child {
+  font-weight: 700;
+}
+.userInfo div p:last-child {
+  color: hsl(227, 10%, 46%);
+}
+.userInfo-city {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 59%);
+}
+
+.card__footer {
+  display: inherit;
+  border-top: 1px #ccc solid;
+}
+
+.stats {
+  display: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 0 auto;
+
+  padding: 30px 0;
+}
+.stats div {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 4px;
+}
+.stats p:first-child {
+  font-weight: 700;
+}
+.stats p:last-child {
+  font-size: 12px;
+  color: hsl(229, 23%, 23%);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-position: right 51vw bottom 43vh, left 50vw top 50vh;
+  }
+}
